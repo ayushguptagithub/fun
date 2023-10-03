@@ -6,20 +6,27 @@
     <style>
         .witch{
             display: none;
+            position: absolute;
+            top: 0;
+            left: -5px;
         }
+        
     
     </style>
 </head>
 <body>
     <center><button onclick="show()">Click me</button></center>
-    <img class="witch" src="witch.jpeg" height="100%" width="100%"/>
+    <img class="witch" src="witch.jpeg" height="120%" width="120%"/>
     <audio id="audio" src="witch-103635.mp3"></audio>
     <script>
         function show(){
-            document.getElementsByClassName("witch")[0].style.display = "block";
+            x=document.getElementsByClassName("witch")[0].style.display = "block";
+            x.classList.add("zoom");
             var audio = document.getElementById("audio");
             audio.play();
         }
     </script>
 </body>
 </html>
+
+
