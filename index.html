@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .witch{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center><button onclick="show()">Click me</button></center>
+    <img class="witch" src="witch.jpeg" height="50%" width="100%"/>
+    <script>
+        function show(){
+            document.getElementsByClassName("witch")[0].style.display = "block";
+        }
+    </script>
+</body>
+</html>
